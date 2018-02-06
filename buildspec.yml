@@ -5,7 +5,5 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn install
-artifacts:
-  files:
-    - pom.xml
-  discard-paths: yes
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync _site/ https://s3.us-east-2.amazonaws.com/cmp-pipeline-test/build_test/
