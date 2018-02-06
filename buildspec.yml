@@ -7,5 +7,5 @@ phases:
       - mvn install
 artifacts:
   files:
-    - pom.xml
+    - **/*.war
   discard-paths: yes
