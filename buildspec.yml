@@ -6,4 +6,4 @@ phases:
       - echo Build completed on `date`
       - mvn install
       - echo "******** Uploading to S3 ********"
-      - aws s3 sync ./site/target/*.war s3://cmp-pipeline-test/build_test/test2
+      - aws s3 sync . s3://cmp-pipeline-test/build_test/test2 --exclude '*' --include '*.war'
