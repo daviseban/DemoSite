@@ -8,5 +8,5 @@ phases:
       - aws s3 cp s3://cmp-pipeline-test/build_test/site/target/broadleaf.json broadleaf.json
 artifacts:
   files:
-    - target/broadleaf.json
+    - broadleaf.json
   discard-paths: yes
