@@ -1,13 +1,14 @@
-version:Â 0.2
-Â 	Â 
+version: 0.2
+ 	 
 phases:
- post_build:
-Â  commands:
-Â  -Â echo Build completed on `date`
-Â  -Â mvn install
-Â  -Â echo "******** Uploading to S3 ********"
-  - aws s3 cp s3://cmp-pipeline-test/build_test/site/target/broadleaf.json broadleaf.json
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn install
+      - echo "******** Uploading to S3 ********"
+      - aws s3 cp s3://cmp-pipeline-test/build_test/site/target/broadleaf.json broadleaf.json
 artifacts:
- files:
-  - target/mycompany.war
-  - target/broadleaf.json
+  files:
+    - target/mycompany.war
+    - target/broadleaf.json
+  discard-paths: yes
