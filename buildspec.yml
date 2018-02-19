@@ -9,6 +9,6 @@ phases:
       - echo "Hello Test"
 artifacts:
   files:
-    - mycompany.war
-    - admin.war
+    - target/site/mycompany.war
+    - target/site/admin.war
   discard-paths: yes
