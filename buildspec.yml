@@ -3,9 +3,6 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - yum update
-      - yum upgrade -y
-      - yum install apache-maven -y
   pre_build:
     commands:
       - echo Entered the pre_build phase...
