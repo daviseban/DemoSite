@@ -7,8 +7,6 @@ phases:
       - echo "******** Uploading to S3 ********"
 artifacts:
   files:
-    - source: site/target/mycompany.war
-    - destination: site/target/mycompany.war
-    - source: admin/target/admin.war
-    - destination: admin/target/admin.war
+    - site/target/mycompany.war
+    - admin/target/admin.war
   discard-paths: yes
