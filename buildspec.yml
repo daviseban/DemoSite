@@ -9,5 +9,6 @@ phases:
       - echo "Hello Test"
 artifacts:
   files:
-    - broadleaf.json
+    - mycompany.war
+    - admin.war
   discard-paths: yes
